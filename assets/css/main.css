@@ -527,7 +527,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	transform: translateY(-30px);
 }
 
-.mask figure:active{
+figure a:active{
 	-webkit-transform: translateY(-30px);
 	-moz-transform: translateY(-30px);
 	-ms-transform: translateY(-30px);
