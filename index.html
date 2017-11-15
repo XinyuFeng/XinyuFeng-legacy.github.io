@@ -1,32 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Color Game</title>
-    <link rel="stylesheet" type="text/css", href="ColorGame/colorGame.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Xinyu's Homepage</title>
+
+<link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico"/>
+
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+
 </head>
-<body>
-<h1>
-    The Great
-    <br>
-    <span id="colorDisplay">RGB</span>
-    <br>
-    Color Game
-</h1>
-<div id="stripe">
-    <button id="reset">New Colors</button>
-    <span id="message"></span>
-    <button class="mode">Easy</button>
-    <button class="mode selected">Hard</button>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<div id="navbar-main"> 
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#home">Xinyu FENG</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+	  <li> <a href="http://yanbinren.com/blog/">Blog</a></li>
+          <li> <a href="#home" class="smoothScroll">Home</a></li>
+          <li> <a href="#about" class="smoothScroll"> Biography</a></li>
+          <li> <a href="#services" class="smoothScroll"> Experience</a></li>
+          <li> <a href="#portfolio" class="smoothScroll"> Projects&Skills</a></li>
+          <li> <a href="#team" class="smoothScroll"> NEWS!</a></li>
+          <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
 </div>
-<div id="container">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+
+<!-- ==== HEADERWRAP ==== -->
+<div id="headerwrap" name="home">
+  <header class="clearfix"> 
+    <h1>Bonjour</h1>
+    <p>Welcome to Xinyu's homepage!</p>
+    <a href="https://www.linkedin.com/in/xinyufeng-223748113/" class="smoothScroll btn btn-lg" id="btn0">LinkedIn</a>
+    <a href="https://github.com/XinyuFeng" class="smoothScroll btn btn-lg" id="btn1">GitHub</a>
+    <a href="http://yanbinren.com/blog/" class="smoothScroll btn btn-lg" id="btn2">Blog</a> 
+  </header>
 </div>
-<script type="text/javascript" src="ColorGame/colorGame.js"></script>
+<!-- /headerwrap --> 
+
+<!-- ==== ABOUT ==== -->
+<div id="about" name="about">
+  <div class="container">
+    <div class="row white">
+      <h2 class="centered">ABOUT ME</h2>
+      <hr>
+      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/me.jpg" align=""> </div>
+      <div class="col-md-6">
+        <h3>Who I am</h3>
+        <p>My name is XinyuFeng. I'm a graduate student at <a target="_blank" href="http://www.usc.edu/">USC</a> with a Master of Science degree in <a target="_blank" href="http://cs.usc.edu/">Computer Science</a>. I received my Bachelor of Engineering degree from <a target="_blank" href="http://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a>, China.</p>
+		<p>I am a quick learner. I'm interested in web application development, deep learning and artificial intelligence.
+		<!-- I am currently looking for a full-time position as a software engineer. -->
+		Here is my <a target="_blank" href="https://drive.google.com/file/d/1lgD9P9MWBRBvJJfmrKr4s4I7yRUI8hGh/view?usp=sharing">resume</a>.</p>
+
+          <h3 align="left">Skills</h3>
+          <br>
+          <p><B>Programming Languages:</B> C/C++, Python, Java, objective-c, C# <br>
+            <B>Web:</B> HTML, CSS, Bootstrap, javascript, jQuery, vue.js, react.js, Django, Flask, PHP, WebCrawler <br>
+            <B>Misc.:</B> LAMP(Linux, Apache, Mysql, PHP/Python), AWS, Computer Networks, Shell Scripts, Weka, LaTeX, Verilog(FPGA), Android, Ruby, git, Perforce
+          </p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container -->
+
+<!-- ==== PORTFOLIO ==== -->
+<div id="portfolio" name="portfolio">
+    <div class="container">
+        <div class="row">
+            <h2 class="centered">Projects</h2>
+            <hr>
+            <!-- <p class="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our brand new product <B><I>GoApp</I> &nbsp;("走吗")</B> is coming soon! Check out this page in early June and stay tuned! <a href="#contact" class="smoothScroll">Leave a message below</a> to get hands on our test app in the first time.</p>  -->
+
+            <p class="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suggestions and comments are always welcome! <a href="#contact" class="smoothScroll">Message me</a> if you wanna discuss on detailed techniques of the projects below.</p>
+        </div>
+        <!-- /row -->
+        <div class="container row">
+            <div class="project">
+
+                <!-- PORTFOLIO IMAGE 1 -->
+
+                <div class="col-md-12">
+
+                    <div class="grid mask">
+                        <figure> <img class="img-responsive" src="assets/img/projects/yelpcamp.png" alt="">
+                            <figcaption>
+                                <h5 class ="centered">YelpCamp</h5>
+                                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+                            <!-- /figcaption -->
+                        </figure>
+                        <!-- /figure -->
+                    </div>
+                    <!-- /grid-mask -->
+                </div>
+
+                <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+                                      a modal for each of your projects. -->
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">YelpCamp</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p><img class="img-responsive" src="assets/img/projects/yelpcamp.png" alt=""></p>
+                                <p><B>Main Page</B></p>
+                                <p><img class="img-responsive" src="assets/img/projects/yelp-main.png" alt=""></p>
+                                <p><B>Lots of Campgrounds!</B></p>
+                                <p><img class="img-responsive" src="assets/img/projects/yelp-show.png" alt=""></p>
+                                <p><B>One detailed campground</B></p>
+                                <div id="hello">
+                                    <p>Are you want to share your favorite campground to people? If yes, come and add a campground that belongs to you!<br>
+
+                                        YelpCamp is a light-weight web application that can add, edit, comment any campgrounds here. It has been deployed on Heroku. It's main framework lies on Node.js, with MobgoDB to store User data. It uses Express.js to achieve RESTful Routing, Passport.js to maintain data persistence, and Bootstrap to achieve responsive web design.<br>
+
+                                        The highlights:<br>
+
+                                        • &nbsp;&nbsp;Support people to create their own campgrounds<br>
+                                        • &nbsp;&nbsp;Capable of adding comments to others' campgrounds, edit their own campgrounds<br>
+                                        • &nbsp;&nbsp;Searching campgrounds with particular keywords.<br></p>
+                                </div>
+                                <p><b><a href="https://fast-coast-56012.herokuapp.com">Visit Site</a></b></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+            <!-- /row -->
+            <br><br>
+
+            <br><br>
+
+        </div>
+    </div>
+        <br><br>
+
+        <br><br>
+    <!-- /container -->
+
+    <!-- ==== SERVICES ==== -->
+<div id="services" name="services">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">Professonal Experience</h2>
+      <hr>
+	  <h3 align="left">Education Background</h3>
+	  <br><br>
+	  <div class="row">
+	  	<div class="col-md-2"> 
+			<img class="img-responsive" src="assets/img/experience/ucla2.png" align=""> 
+		</div>
+	 	<div class="col-md-10">
+			<p>
+				<B>University of California, Los Angeles</B>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sept. 2014 - Dec. 2015<br>
+	  		  	<B>Department of Computer Science</B><br>
+	 		   	&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;M.S. in Computer Science<br>
+	  		  	&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;GPA: 3.89 / 4.00<br>
+	  		  	&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Courses: Operating Systems, Databases, Advanced Computer Networks, Introduction to Algorithms & Complexity, Distributed Systems, Current Topics in Data Structure, Network Protocol and System Software Design for Wirelss and Mobile, Advanced Topics in Internet Research, Current Topics in Computer Science: Programming Languages and Systems<br>
+  			</p>
+		</div>
+	  </div>
+	  <div class="row">	
+		  <div class="col-md-2"> 
+			  <img class="img-responsive" src="assets/img/experience/sjtu.png" align=""> 
+		  </div>
+		  <div class="col-md-10">
+			  <p>
+				  <B>Shanghai Jiao Tong University</B>
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sept. 2010 - June 2014<br>
+				  <B>School of Information Security Engineering</B><br>
+  	  			  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;B.Eng. in Information Security<br>
+	  			  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Graduation with Honor of Shanghai Jiao Tong University<br>
+	  			  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Academic Excellence Scholarship (First Class) of SJTU (top 3%)<br>
+  	  			  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Major GPA: 90.34 / 100 (top 3%)<br>
+  	  			  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Major Courses: OO Programming, Databases, Data Structure and Algorithms, Software Engineering, Operating System, Computer Communication and Network, Compiler Principles, Mobile Communications, Windows Security Theory and Techniques, Internet Security Protocols and Related Analysis, System Software Development, Computer Organization and Architecture, etc<br>
+			  </p>
+		  </div>
+	  </div>
+    </div>
+	
+	<h3 align="left">Working Experience</h3>
+	<br><br>  
+	<div class="row">	
+		<div class="col-md-2"> 
+			<img class="img-responsive" src="assets/img/experience/Google_icon.gif">
+		 </div>
+     	<div class="col-md-10">
+			<p>
+			
+<font face="Arial" color="#3333ff" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(51,51,255)"><b>G</b></font><font face="Arial" color="#ff2500" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(255,37,0)"><b>o</b></font><font face="Arial" color="#ffcc66" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(255,204,102)"><b>o</b></font><font face="Arial" color="#3333ff" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(51,51,255)"><b>g</b></font><font face="Arial" color="#009900" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(0,153,0)"><b>l</b></font><font face="Arial" color="#ff2500" style="font-stretch:normal;font-size:18px;line-height:normal;font-family:Arial;color:rgb(255,37,0)"><b>e</b></font>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb. 2016 - Present, Mountain View, California
+				<br>
+				<B>Payments Infrastructure Team</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Engineer<br>
+			</p>
+		</div>
+   	 </div>
+   	 
+   	 <br><br><br>
+   	 
+   	<div class="row">	
+		<div class="col-md-2"> 
+			<img class="img-responsive" src="assets/img/experience/arista.png">
+		 </div>
+     	<div class="col-md-10">
+			<p>
+				<B>Arista Networks, Inc</B>
+				&nbsp;&nbsp;(NYSE: ANET)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June 2015 - Sept. 2015, Santa Clara, California
+				<br>
+				<B>SDN (Software-Defined Networking) Team</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering Intern<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Project: Hadoop Environment Configuration & Yarn Memory Optimization on EOS</I><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Project: Aboard - Arista Internal Project Merge Request Management Dashboard</I><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed and implemented the first Arista internal merge request management dashboard with Apache Web Server, wsgi, MySQL, Django, Bootstrap, jQuery, OAuth 2.0(Google API), interacting with Perforce, ChangeList(cl) System, Bugs Database, ReviewBoard. Launched at Arista in September 2015.<br>
+				<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project has been pushed to production as an internal tool and is widely used all over the company.<br> -->
+				&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Miscellaneous: Bug fix</I><br>
+			</p>
+		</div>
+   	 </div>
+	  
+	  <div class="row">
+	  <div class="col-md-2"> <img class="img-responsive" src="assets/img/experience/intel.png" align=""> </div>
+	  <div class="col-md-10">
+	  <p><B>Intel Asia-Pacific Research & Development Ltd.</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nov. 2013 - June 2014, Shanghai, China
+		  <br>
+	  <B>Data Center Group, CPD Open Lab</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmware Intern<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Project: Automatic File Encryption - Secure Cloud Storage Demo on Windows platform</I><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed software demo that runs in the background of client-end, which can automatically encrypt data before uploaded to cloud storage
+<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Project: RADOS Block Device (Ceph) Benchmark based on Intel Architecture</I><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup a distributed storage system with heterogeneous commodity hardware (Intel Atom Chipsets, CPUs, ~100 HDDs, Flash, RAM, NIC, etc.) in the rack and 10GbE private network for internal replica updates and 1GbE public network for client access.<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deployed Ceph Storage, distributed system monitoring software (Ganglia & NAGIOS) in the cluster, benchmarked on throughput, latency, reliability, load-balance of Ceph RBD Storage and analyzed the bottleneck of the whole system.<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;<I>Miscellaneous: Storage Rack Setup & Benchmark on Intel WKB iSCSI Storage</I><br>
+	  
+  		</p>
+		</div>
+		</div>
+		
+	<div class="row">	
+  	  <div class="col-md-2"> <img class="img-responsive" src="assets/img/experience/roche.jpg" align=""> </div>
+  	  <div class="col-md-10">
+  	  <p><B>Roche R&D Center (China) Ltd</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apr. 2013 - Sept. 2013, Shanghai, China<br>
+  	  <B>IT Department</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informatics Intern<br>
+  	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Routine server maintenance<br>
+  	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Network upgrade and configuration, management on Cisco switches and VLANs<br>
+  	  &nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;Customized Windows 7 image for Roche R&D Center<br>
+	  
+     </p>
+	 </div>
+	 </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+
+
+
+<!-- ==== TEAM MEMBERS ==== -->
+<div id="team" name="team">
+  <div class="container">
+    <div class="row centered">
+      <h2 class="centered">NEWS!</h2>
+      <hr>
+	  <p align="left">
+                  Not much :) <br><br>
+	  </p>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+      </div>
+    </div>
+  </div>
+  <!-- row --> 
+</div>
+<!-- container --> 
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" name="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">CONTACT ME</h2>
+      <hr>
+      <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>1600 Amphitheatre Pkwy<br>
+         	Mountain View, CA 94043, U.S.</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>renyb1991@gmail.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> +1 (310) 694-4996 (Pacific time)</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p>Comments and suggestions are always welcome. I reply emails within 24 hrs.</p>
+        <form id="contact" method="post" class="form" role="form">
+          <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+          </div>
+          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <button class="btn btn btn-lg" type="submit"><a href="mailto:renyb1991@gmail.com?subject=hello">Send Message</a></button>
+            </div>
+          </div>
+        </form>
+        <!-- form --> 
+      </div>
+    </div>
+    <!-- row --> 
+    
+  </div>
+</div>
+<!-- container -->
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2016 Yanbin REN.  Last modified February 28, 2016</span> </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://www.facebook.com/profile.php?id=100006934172547"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://plus.google.com/100646768421735818757/posts"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="https://www.linkedin.com/in/yanbinren"><i class="fa fa-linkedin"></i></a> </li>
+          <li><a href="https://www.pinterest.com/yanbinren/"><i class="fa fa-pinterest"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/retina.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62870606-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
