@@ -42,13 +42,13 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-	  <li> <a href="http://yanbinren.com/blog/">Blog</a></li>
-          <li> <a href="https://xinyufeng.github.io/#home" class="smoothScroll">Home</a></li>
-          <li> <a href="https://xinyufeng.github.io/#about" class="smoothScroll"> Biography</a></li>
-          <li> <a href="https://xinyufeng.github.io/#services" class="smoothScroll"> Experience</a></li>
-          <li> <a href="https://xinyufeng.github.io/#portfolio" class="smoothScroll"> Projects&Skills</a></li>
-          <li> <a href="https://xinyufeng.github.io/#team" class="smoothScroll"> NEWS!</a></li>
-          <li> <a href="https://xinyufeng.github.io/#contact" class="smoothScroll"> Contact</a></li>
+	  <li> <a href="https://xinyufeng.github.io/myBlog/">Blog</a></li>
+          <li> <a href="#home" class="smoothScroll">Home</a></li>
+          <li> <a href="#about" class="smoothScroll"> Biography</a></li>
+          <li> <a href="#services" class="smoothScroll"> Experience</a></li>
+          <li> <a href="#portfolio" class="smoothScroll"> Projects&Skills</a></li>
+          <li> <a href="#team" class="smoothScroll"> NEWS!</a></li>
+          <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -333,7 +333,11 @@
 
 
 <script>
-
+    $(document).ready(function(){
+        var hash = location.hash;
+        location.hash = '';
+        location.hash = hash;
+    });
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
