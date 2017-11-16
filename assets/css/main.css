@@ -71,16 +71,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 }
+
+.project {
+	padding: 1% 5%;
+}
 .header-bg {
 	width: 150px;
 	border-radius: 50%;
 	text-align: center;
 	margin: 0 auto;
 	border: 3px solid #f8f8f8;
-}
-
-.project {
-	padding: 1% 5%;
 }
 .col-md-4 {
 	padding-bottom: 20px;
